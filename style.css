@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --colorwhite: #fff;
+    --colorfundo: #0b1d21;
+    --corvermelho: #e81e4a;
+    --corverdeEsc: #078a85;
+    --corverdecla: #68baab;
+    --corbege: #edd5c5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+
+}
+
+body{
+    background-color: var(--colorfundo);
+}
+
+section{
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header{
+    width: 100%;
+    min-height: 60px;
+    background-color:var(--corverdeEsc);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top:0;
+    z-index: 99;
+}
+
+.header .logo-dev-car{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar a{
+    padding: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.navbar a:hover{
+    background-color: var(--corverdecla);
+    border-radius: 10px;
+    color: var(--corvermelho);
+    font-weight: 600;
+
+}
+
+.icons img{
+    margin: 1rem;
+    cursor: pointer;
+}
+
+
+/*container home*/
+
+.container-home{
+}
+
+.container-home .home{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.container-home .home img{
+    width: 40%;
+}
+.container-home .home h3{
+    color: var(--colorwhite);
+    font-size: 1.6rem;
+}
+.container-home .home p{
+    color: var(--colorwhite);
+    font-size: 1rem;
+    line-height: 20px;
+}
+
+.button-home{
+    cursor: pointer;
+    padding: 1rem 3rem;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    display: inline-block;
+    background-color: var(--colorwhite);
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.button-home:hover{
+    background-color: var(--corverdecla);
+    color: var(--corvermelho);
+    font-weight: 600;
+}
+
+.button-home:active{
+    transform: translateY(1px);
+}
+
+.Nosso-catalogo{
+    background-color: var(--colorwhite);
+}
+
+
+
+
+
+/*catalogo*/
+
+
+.container-catalogo h2{
+    text-align: center;
+    background-color: var(--colorwhite);
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.Nosso-catalogo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 20px ;
+}
+
+.catalogo-card{
+    background-color: var(--colorfundo);
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 10px solid var(--colorfundo);
+    color: white;
+    
+}
+.catalogo-card .box-img{
+    display: flex;
+    align-items: center;
+    padding: 40px 5px;
+    position: relative;
+}
+
+.catalogo-card img{
+    display: block;
+    width: 100%;
+}
+
+.catalogo-card p{
+    text-align: center;
+    margin: 5px;
+    font-size: 1.2rem;
+}
+
+.catalogo-card div{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.button-card{
+    cursor: pointer;
+    background-color: var(--corbege);
+    border: none;
+    padding: 3px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.old-price{
+    text-decoration: line-through;
+    color: #a3a3a3;
+}
